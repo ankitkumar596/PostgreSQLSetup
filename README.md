@@ -8,9 +8,9 @@ Prerequisites
 
 Before you begin, you will need to have the following prerequisites:
 
-    A system running Windows, macOS, or Linux
-    Docker installed on your system
-    Basic knowledge of using the command line
+1. A system running Windows, macOS, or Linux
+2. Docker installed on your system
+3. Basic knowledge of using the command line
 
 Once Docker is installed, you can verify the installation by running the following command in your terminal:
 
