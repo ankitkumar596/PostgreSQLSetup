@@ -21,9 +21,9 @@ docker --version
 This command will display the version of Docker installed on your system.
 Setup
 
-    - Create a Data Directory: Now that you have Docker installed, create a new directory for your PostgreSQL data. This directory will be used to store the data files for your PostgreSQL instance. It's recommended to keep this directory in your project folder for easy management.
+- Create a Data Directory: Now that you have Docker installed, create a new directory for your PostgreSQL data. This directory will be used to store the data files for your PostgreSQL instance. It's recommended to keep this directory in your project folder for easy management.
 
-    - Create a Docker Compose File: In the directory you created, create a new file named docker-compose.yml. This file will contain the configuration for your PostgreSQL container. Insert the following content into the docker-compose.yml file:
+- Create a Docker Compose File: In the directory you created, create a new file named docker-compose.yml. This file will contain the configuration for your PostgreSQL container. Insert the following content into the docker-compose.yml file:
 
 ```
 version: '3.8'
