@@ -70,7 +70,7 @@ In this configuration file, we define two services: db and pgadmin. The db servi
 
 The db service uses the postgres image from the Docker Hub registry. We specify the volume mapping to store the data files in the local_pgdata volume. The ports section maps the container port 5432 to the host port 5432, allowing you to access the PostgreSQL instance from your local machine.
 
-We also set the environment variables POSTGRES_DB, POSTGRES_USER, and POSTGRES_PASSWORD to configure the database name, username, and password, respectively.
+We also set the environment variables `POSTGRES_DB`, `POSTGRES_USER`, and `POSTGRES_PASSWORD` to configure the database name, username, and password, respectively.
 
 The pgadmin service uses the dpage/pgadmin4 image from the Docker Hub registry. We map the container port 80 to the host port 8888 to access the pgAdmin web interface.
 Starting PostgreSQL
