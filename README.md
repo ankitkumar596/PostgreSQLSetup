@@ -100,7 +100,7 @@ If you want to connect with a database URL, you can use the following URL:
 
 ```
 
-postgresql://db_admin_123:P@ssw0rd!2024@localhost:5432/common_database
+postgresql://root:root@localhost:5432/testdb
 
 ```
 
