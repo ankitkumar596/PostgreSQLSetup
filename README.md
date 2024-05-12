@@ -34,13 +34,13 @@ services:
     container_name: pg_container
     restart: always
     environment:
-      POSTGRES_PASSWORD: P@ssw0rd!2024
-      POSTGRES_USER: db_admin_123
-      POSTGRES_DB: common_database
+      POSTGRES_PASSWORD: root
+      POSTGRES_USER: root
+      POSTGRES_DB: testdb
     ports:
       - '5432:5432'
     volumes:
-      - local_pgdata:/var/lib/postgresql/data
+      - pgdata:/var/lib/postgresql/data
     networks:
       - db_network
 
@@ -57,7 +57,7 @@ services:
       - db_network
 
 volumes:
-  local_pgdata:
+  pgdata:
 
 networks:
   db_network:
