@@ -31,12 +31,12 @@ version: '3.8'
 services:
   db:
     image: postgres:latest
-    container_name: pg_container
+    container_name: pg_ctr
     restart: always
     environment:
-      POSTGRES_PASSWORD: root
-      POSTGRES_USER: root
-      POSTGRES_DB: testdb
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_USER: app_user
+      POSTGRES_DB: app-db
     ports:
       - '5432:5432'
     volumes:
@@ -46,13 +46,13 @@ services:
 
   pgadmin:
     image: dpage/pgadmin4
-    container_name: pgadmin4_container
+    container_name: pgadmin4_ctr
     restart: always
     ports:
       - '8888:80'
     environment:
       PGADMIN_DEFAULT_EMAIL: pgadmin@example.com
-      PGADMIN_DEFAULT_PASSWORD: root
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
     networks:
       - db_network
 
