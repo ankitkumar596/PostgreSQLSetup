@@ -63,7 +63,14 @@ networks:
   db_network:
 
 ```
+.env file
+Create a file named .env in the same directory as your docker-compose.yml file and add the following content:
+```
 
+POSTGRES_PASSWORD=appuser@1234
+PGADMIN_DEFAULT_PASSWORD=pgadmin
+
+```
 Explanation
 
 In this configuration file, we define two services: db and pgadmin. The db service is responsible for running the PostgreSQL instance, while the pgadmin service is responsible for running the pgAdmin web interface.
@@ -100,7 +107,8 @@ If you want to connect with a database URL, you can use the following URL:
 
 ```
 
-postgresql://root:root@localhost:5432/testdb
+postgresql://app_user:appuser@1234@localhost:5432/app-db
+
 
 ```
 
